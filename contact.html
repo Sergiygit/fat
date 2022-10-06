@@ -1,78 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"What we us" })
+
+<head>
+	<title>What we us</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221006130623">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap&_v=20221006130623" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:500,700,900&display=swap&_v=20221006130623" rel="stylesheet" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
-    <div class="wrapper">
-        @@include('html/_header.htm',{})
-        <main class="page">
-            <section class="page__contact contact">
-                <div class="contact__content">
-                    <div class="contact__container">
-                        <h1 class="contact__title title">
-                            Contact us
-                        </h1>
-                        <div class="contact__head-contact head-contact">
-                            <div class="head-contact__columns-contact">
-                                <div class="columns-contact__column-contact">
-                                    <h3 class="column-contact__title">
-                                        Our location
-                                    </h3>
-                                    <div class="column-contact__location">
-                                        <img src="@img/svg/contact/location.svg" alt="location-svg">
-                                        <div class="column-contact__adress">
-                                            1160 Cresthaven Lane 207 IL, Naperville zip 60564
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="columns-contact__column-contact">
-                                    <h3 class="column-contact__title">
-                                        Contact us
-                                    </h3>
-                                    <ul class="column-contact__links">
-                                        <a href="tel:13129315885" class="column-contact__link">
-                                            <img src="@img/svg/contact/phone.svg" alt="phone-svg">
-                                            <div class="column-contact__phone">
-                                                <span>Phone:</span>
-                                                <div>+1 (847) 243-3840</div>
-                                            </div>
-                                        </a>
-                                        <a href="mailto:example@gmail.com" class="column-contact__link">
-                                            <img src="@img/svg/contact/mail.svg" alt="mail-svg">
-                                            <div class="column-contact__phone">
-                                                <span>E-Mail:</span>
-                                                <div>example@gmail.com</div>
-                                            </div>
-                                        </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact__map" id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.298369620716!2d-88.17159808456472!3d41.692494179237386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef6273f8edff7%3A0xc14c9feda7c2bea5!2zMTE2MCBDcmVzdGhhdmVuIExuICMyMDcsIE5hcGVydmlsbGUsIElMIDYwNTY0LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1665044252929!5m2!1sru!2sua"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="contact__form-block">
-                        <div class="form-block__image">
-                            <img src="@img/form/01.png" alt="form-image">
-                        </div>
-                        <form action="#" class="form-block__form">
-                            <h2 class="form__title title">Leave a request</h2>
-                            <div class="form__text">Leave a request and we will call you back within 15 minutes</div>
-                            <div class="form__inputs">
-                                <input autocomplete="off" required type="text" name="form-name" data-error="Ошибка" placeholder="Name" class="form__input">
-                                <input autocomplete="off" required type="number" name="form-phone" data-error="Ошибка" placeholder="Phone" class="form__input">
-                                <input autocomplete="off" required type="email" name="form-E-mail" data-error="Ошибка" placeholder="E-mail" class="form__input">
-                            </div>
-                            <button class="form__button button">Send a request</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-        @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__menu-block">
+						<div class="header__info-block">
+							<a href="#" class="header__adress"> <img src="img/svg/header-adress.svg" alt="adress.svg"> <span>1160 Cresthaven Lane 207 IL, Naperville</span></a>
+							<a href="tel:13129315885" class="header__phone"> <img src="img/svg/header-phone.svg" alt="header-phone"> <span>+1 (312) 931-5885</span></a>
+						</div>
+						<div data-da=".header__content, 991.98" class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="./index.html" class="menu__link">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="./what.html" class="menu__link">What we use</a>
+									</li>
+									<li class="menu__item">
+										<a href="./about.html" class="menu__link">About us</a>
+									</li>
+									<li class="menu__item">
+										<a href="./gallery.html" class="menu__link">Gallery</a>
+									</li>
+									<li class="menu__item">
+										<a href="./blog.html" class="menu__link">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="./reglazing.html" class="menu__link">Why reglazing</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="./contact.html" class="header__button button">
+						contact us
+					</a>
+				</div>
+			</div>
+			<a href="#" class="test">
+				<div class="test__image">
+					<img src="img/svg/question/01.svg" alt="question">
+				</div>
+				<div class="test__text">Have a question? Write to us</div>
+			</a>
+		</header>
+		<main class="page">
+			<section class="page__contact contact">
+				<div class="contact__content">
+					<div class="contact__container">
+						<h1 class="contact__title title">
+							Contact us
+						</h1>
+						<div class="contact__head-contact head-contact">
+							<div class="head-contact__columns-contact">
+								<div class="columns-contact__column-contact">
+									<h3 class="column-contact__title">
+										Our location
+									</h3>
+									<div class="column-contact__location">
+										<img src="img/svg/contact/location.svg" alt="location-svg">
+										<div class="column-contact__adress">
+											1160 Cresthaven Lane 207 IL, Naperville zip 60564
+										</div>
+									</div>
+								</div>
+								<div class="columns-contact__column-contact">
+									<h3 class="column-contact__title">
+										Contact us
+									</h3>
+									<ul class="column-contact__links">
+										<a href="tel:13129315885" class="column-contact__link">
+											<img src="img/svg/contact/phone.svg" alt="phone-svg">
+											<div class="column-contact__phone">
+												<span>Phone:</span>
+												<div>+1 (847) 243-3840</div>
+											</div>
+										</a>
+										<a href="mailto:example@gmail.com" class="column-contact__link">
+											<img src="img/svg/contact/mail.svg" alt="mail-svg">
+											<div class="column-contact__phone">
+												<span>E-Mail:</span>
+												<div>example@gmail.com</div>
+											</div>
+										</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact__map" id="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.298369620716!2d-88.17159808456472!3d41.692494179237386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef6273f8edff7%3A0xc14c9feda7c2bea5!2zMTE2MCBDcmVzdGhhdmVuIExuICMyMDcsIE5hcGVydmlsbGUsIElMIDYwNTY0LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1665044252929!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="contact__form-block">
+						<div class="form-block__image">
+							<picture><source srcset="img/form/01.webp" type="image/webp"><img src="img/form/01.png" alt="form-image"></picture>
+						</div>
+						<form action="#" class="form-block__form">
+							<h2 class="form__title title">Leave a request</h2>
+							<div class="form__text">Leave a request and we will call you back within 15 minutes</div>
+							<div class="form__inputs">
+								<input autocomplete="off" required type="text" name="form-name" data-error="Ошибка" placeholder="Name" class="form__input">
+								<input autocomplete="off" required type="number" name="form-phone" data-error="Ошибка" placeholder="Phone" class="form__input">
+								<input autocomplete="off" required type="email" name="form-E-mail" data-error="Ошибка" placeholder="E-mail" class="form__input">
+							</div>
+							<button class="form__button button">Send a request</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__image">
+						<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt="footer__image"></picture>
+					</div>
+					<div class="footer__menu footer-menu">
+						<nav class="footer__body">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="./index.html" class="footer-menu__link">Home</a>
+								</li>
+								<li class="footer__item">
+									<a href="./what.html" class="footer-menu__link">What we use</a>
+								</li>
+								<li class="footer__item">
+									<a href="./about.html" class="footer-menu__link">About us</a>
+								</li>
+								<li class="footer__item">
+									<a href="./gallery.html" class="footer-menu__link">Gallery</a>
+								</li>
+								<li class="footer__item">
+									<a href="./blog.html" class="footer-menu__link">Blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="./reglazing.html" class="footer-menu__link">Why reglazing</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+					<div class="footer__contact contact-footer">
+						<h4 class="contact-footer__title">Contact info
+						</h4>
+						<div class="contact-footer__adress-block">
+							<a href="#" class="contact-footer__adress">
+								<p>Adress:</p>
+								<span>1160 Cresthaven Lane 207 IL, Naperville zip 60564</span>
+							</a>
+							<a href="#" class="contact-footer__adress-icon">
+								<img src="img/svg/footer/location.svg" alt="adress-icon">
+							</a>
+						</div>
+						<a href="#" class="contact-footer__phone-block">
+							<div class="contact-footer__phone">
+								<p>Phone:</p>
+								<span>+1 (312) 931-5885</span>
+
+							</div>
+							<div class="contact-footer__phone-icon">
+								<img src="img/svg/footer/phone.svg" alt="phone-icon">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__botom">
+					<div class="footer__social">
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/01.svg" alt="social">
+						</a>
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/02.svg" alt="social">
+						</a>
+					</div>
+					<div class="footer__copyright-block">
+						<div class="footer__copy">
+							<a href="#" class="footer__copy-link">privacy policy</a>
+						</div>
+						<div class="footer__develop">
+							Develop website <a target="_blank" href="https://bahtiiar.kg/">bahtiiar.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221006130623"></script>
 </body>
 
 

@@ -1,243 +1,388 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"Bolot" })
+
+<head>
+	<title>Bolot</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221006130623">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap&_v=20221006130623" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:500,700,900&display=swap&_v=20221006130623" rel="stylesheet" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
-    <div class="wrapper">
-        @@include('html/_header.htm',{})
-        <main class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__menu-block">
+						<div class="header__info-block">
+							<a href="#" class="header__adress"> <img src="img/svg/header-adress.svg" alt="adress.svg"> <span>1160 Cresthaven Lane 207 IL, Naperville</span></a>
+							<a href="tel:13129315885" class="header__phone"> <img src="img/svg/header-phone.svg" alt="header-phone"> <span>+1 (312) 931-5885</span></a>
+						</div>
+						<div data-da=".header__content, 991.98" class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="./index.html" class="menu__link">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="./what.html" class="menu__link">What we use</a>
+									</li>
+									<li class="menu__item">
+										<a href="./about.html" class="menu__link">About us</a>
+									</li>
+									<li class="menu__item">
+										<a href="./gallery.html" class="menu__link">Gallery</a>
+									</li>
+									<li class="menu__item">
+										<a href="./blog.html" class="menu__link">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="./reglazing.html" class="menu__link">Why reglazing</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="./contact.html" class="header__button button">
+						contact us
+					</a>
+				</div>
+			</div>
+			<a href="#" class="test">
+				<div class="test__image">
+					<img src="img/svg/question/01.svg" alt="question">
+				</div>
+				<div class="test__text">Have a question? Write to us</div>
+			</a>
+		</header>
+		<main class="page">
 
-            <section class="page__make make">
-                <div class="make__content">
-                    <div class="make__container">
-                        <div class="make__body">
-                            <h1 class="make__title title">Make your old Bathtub Brand new again!</h1>
-                            <div class="make__text">We refinish, bathtubs, sinks and hot-tubs</div>
-                            <div class="make__buttons">
-                                <a href="#" class="make__button-play">
-                                    <img src="@img/svg/play.svg" alt="play">
-                                    <span class="make__button-circle _circle-1"></span>
-                                    <span class="make__button-circle _circle-2"></span>
-                                    <span class="make__button-circle _circle-3"></span>
+			<section class="page__make make">
+				<div class="make__content">
+					<div class="make__container">
+						<div class="make__body">
+							<h1 class="make__title title">Make your old Bathtub Brand new again!</h1>
+							<div class="make__text">We refinish, bathtubs, sinks and hot-tubs</div>
+							<div class="make__buttons">
+								<a href="#" class="make__button-play">
+									<img src="img/svg/play.svg" alt="play">
+									<span class="make__button-circle _circle-1"></span>
+									<span class="make__button-circle _circle-2"></span>
+									<span class="make__button-circle _circle-3"></span>
 
-                                </a>
-                                <a href="#" class="make__button button">How it Works ?</a>
-                            </div>
+								</a>
+								<a href="#" class="make__button button">How it Works ?</a>
+							</div>
 
-                        </div>
-                        <div class="make__image-small-phone">
-                            <img src="@img/make/bath.png" alt="bath">
-                        </div>
-                        <div class="make__tips">
-                            <div data-tippy-content="No peel even if faucet dripping" class="make__tip _tip-1">
-                                <img src="@img/svg/plus.svg" alt="+">
-                            </div>
-                            <div class="make__tip _tip-2">
-                                <img data-tippy-content="Totally Odorless Bathtub Refinishing" src="@img/svg/plus.svg" alt="+">
-                            </div>
-                            <div class="make__tip _tip-3">
-                                <img data-tippy-content="Our paint is allergy free" src="@img/svg/plus.svg" alt="+">
-                            </div>
-                            <div class="make__tip _tip-4">
-                                <img data-tippy-content="No peel under bath mat" src="@img/svg/plus.svg" alt="+">
-                            </div>
-                            <div class="make__tip _tip-5">
-                                <img data-tippy-content="No peel under bath mat" src="@img/svg/plus.svg" alt="+">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__works works">
-                <div class="works__container">
-                    <h2 data-watch-threshold="0.04" data-watch class="works__title title">How it Works.</h2>
-                    <div data-watch-threshold="0.04" data-watch class="works__text">It’s the better choice on all counts: you get a handsome looking bathroom for cheaper, in less time, and with much less hassle. The result is just as good as if you’d gone with new.</div>
-                    <div class="works__content">
-                        <div class="works__body">
-                            <div data-watch-threshold="0.04" data-watch class="works__columns-works columns-works">
-                                <div class="columns-works__column-works">
-                                    <div class="column-works__image">
-                                        <img src="@img/svg/works/01.svg" alt="bath">
-                                    </div>
-                                    <div class="column-works__title">No Peeling Off</div>
-                                    <div class="column-works__text">No Peeling under bathmat with suction cups. No peeling if faucet leaking.</div>
-                                </div>
-                                <div class="columns-works__column-works">
-                                    <div class="column-works__image">
-                                        <img src="@img/svg/works/02.svg" alt="svg-img">
-                                    </div>
-                                    <div class="column-works__title">Odor Free Process and Product</div>
-                                    <div class="column-works__text">No need for special ventilation. Eco-Friendly. Near Zero VOC.</div>
-                                </div>
-                                <div class="columns-works__column-works">
-                                    <div class="column-works__image">
-                                        <img src="@img/svg/works/03.svg" alt="svg-img">
-                                    </div>
-                                    <div class="column-works__title">10x Times Thicker</div>
-                                    <div class="column-works__text">10x Times thicker than regular spray. Hardness Shore D 80.</div>
-                                </div>
-                                <div class="columns-works__column-works">
-                                    <div class="column-works__image">
-                                        <img src="@img/svg/works/04.svg" alt="svg-img">
-                                    </div>
-                                    <div class="column-works__title">Pour-On Application
-                                    </div>
-                                    <div class="column-works__text">No Lines, No drips . No orange peel. Smooth , Mirror like Finish.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-watch-threshold="0.04" data-watch class="works__image">
-                        <div class="works__buttons">
-                            <a href="#" class="make__button-play works__image-button">
-                                <img src="@img/svg/play.svg" alt="play">
-                                <span class="make__button-circle _circle-1"></span>
-                                <span class="make__button-circle _circle-2"></span>
-                                <span class="make__button-circle _circle-3"></span>
-                            </a>
-                        </div>
-                        <img src="@img/works/bath.png" alt="bath">
-                    </div>
-                </div>
-            </section>
-            <section class="page__bathroom bathroom">
-                <div class="bathroom__container">
-                    <div class="bathroom__content">
-                        <div class="bathroom__body">
-                            <h3 data-watch data-watch-threshold="0.04" class="bathroom__title">Is your bathroom a mess?</h3>
-                            <div data-watch data-watch-threshold="0.04" class="bathroom__text text">It’s the better choice on all counts: you get a handsome looking bathroom for cheaper, in less time, and with much less hassle. The result is just as good as if you’d gone with new.</div>
-                            <a data-watch data-watch-threshold="0.04" href="./about.html" class="bathroom__button button">About us</a>
-                        </div>
-                        <div data-watch data-watch-threshold="0.04" data-da=".bathroom__body, 992, 2" class="bathroom__image">
-                            <img src="@img/bathroom/bath.png" alt="bath">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__what what">
-                <div class="what__container">
-                    <div class="what__content">
-                        <div class="what__body">
-                            <h3 data-watch data-watch-threshold="0.04" class="what__title">What about a reglazing job?</h3>
-                            <div data-watch data-watch-threshold="0.04" class="what__text text">Most companies who say they ‘refinish’ bathtubs just cover the mess with a quick coat of toxic paint or lacquer. Your bathtub might look nice when it’s done, but that thin, toxic coating that will peel off in 2-3 years, uncovering
-                                all the ugliness hidden beneath</div>
-                            <a data-watch data-watch-threshold="0.04" href="./about.html" class="what__button button">About us</a>
-                        </div>
-                        <div data-watch data-watch-threshold="0.04" data-da=".what__body, 992, 2" class="what__image">
-                            <img src="@img/what/01.png" alt="washbasin">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__company company">
-                <div class="company__container">
-                    <div class="company__content">
-                        <div class="company__body">
-                            <h3 data-watch data-watch-threshold="0.04" class="company__title">Our company</h3>
-                            <div data-watch data-watch-threshold="0.04" class="company__text text">As mentioned, Bathtub Refinishing in Chicago has been in business for a long period of time. With our experience we are proud to announce that we are one of the best companies in the Chicago area that work with bathtub refinishing,
-                                shower resurfacing, sink resurfacing, and tile repair. Our company only employs trained specialists who are highly acquainted with this type of work and care about their job.</div>
-                            <a data-watch data-watch-threshold="0.04" href="./about.html" class="company__button button">About us</a>
-                        </div>
-                        <div data-watch data-watch-threshold="0.04" data-da=".company__body, 992, 2" class="company__image">
-                            <img src="@img/company/01.png" alt="bath">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__words words">
-                <div class="words__container">
-                    <div class="words__content">
-                        <h2 data-watch data-watch-threshold="0.04" class="words__title title">
-                            Words by our customer
-                        </h2>
-                        <!-- Оболочка слайдера -->
-                        <div data-watch class=" words__slider swiper ">
-                            <!-- Двигающееся часть слайдера -->
-                            <div class="words__wrapper swiper-wrapper ">
-                                <!-- Слайд -->
-                                <div class=" words__slide swiper-slide ">
-                                    <div class="words__body">
-                                        <div class="words__image">
-                                            <img src="@img/words/01.png" alt="words__image">
-                                        </div>
-                                        <div class="words__text-block">
-                                            <div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
-                                            </div>
-                                            <div class="words__name">DAVID BRAIN</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" words__slide swiper-slide ">
-                                    <div class="words__body">
-                                        <div class="words__image">
-                                            <img src="@img/words/02.png" alt="words__image">
-                                        </div>
-                                        <div class="words__text-block">
-                                            <div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
-                                            </div>
-                                            <div class="words__name">ALINA GROSS</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" words__slide swiper-slide ">
-                                    <div class="words__body">
-                                        <div class="words__image">
-                                            <img src="@img/words/01.png" alt="words__image">
-                                        </div>
-                                        <div class="words__text-block">
-                                            <div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
-                                            </div>
-                                            <div class="words__name">DAVID BRAIN</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" words__slide swiper-slide ">
-                                    <div class="words__body">
-                                        <div class="words__image">
-                                            <img src="@img/words/02.png" alt="words__image">
-                                        </div>
-                                        <div class="words__text-block">
-                                            <div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
-                                            </div>
-                                            <div class="words__name">ALINA GROSS</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-watch class="words__buttons ">
-                                <button type="button " class="swiper-button-prev ">
-                                    <img src="@img/svg/arrow.svg " alt="arrow ">
-                                </button>
-                                <button type="button " class="swiper-button-next ">
-                                    <img src="@img/svg/arrow.svg " alt="arrow ">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__costomers costomers ">
-                <div class="costomers__container ">
-                    <div class="costomers__content ">
-                        <h2 data-watch data-watch-threshold="0.04" class="costomers__title title ">Our customer</h2>
-                        <div class="costomers__body ">
-                            <div data-watch data-watch-threshold="0.04" class="costomers__image _big _1 ">
-                                <img src="@img/svg/customers/01.svg " alt="customers ">
-                            </div>
-                            <div data-watch data-watch-threshold="0.04" class="costomers__image _big _2">
-                                <img src="@img/svg/customers/02.svg " alt="customers ">
-                            </div>
-                            <div data-watch data-watch-threshold="0.04" class="costomers__image _3 ">
-                                <img src="@img/svg/customers/03.svg " alt="customers ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+						</div>
+						<div class="make__image-small-phone">
+							<picture><source srcset="img/make/bath.webp" type="image/webp"><img src="img/make/bath.png" alt="bath"></picture>
+						</div>
+						<div class="make__tips">
+							<div data-tippy-content="No peel even if faucet dripping" class="make__tip _tip-1">
+								<img src="img/svg/plus.svg" alt="+">
+							</div>
+							<div class="make__tip _tip-2">
+								<img data-tippy-content="Totally Odorless Bathtub Refinishing" src="img/svg/plus.svg" alt="+">
+							</div>
+							<div class="make__tip _tip-3">
+								<img data-tippy-content="Our paint is allergy free" src="img/svg/plus.svg" alt="+">
+							</div>
+							<div class="make__tip _tip-4">
+								<img data-tippy-content="No peel under bath mat" src="img/svg/plus.svg" alt="+">
+							</div>
+							<div class="make__tip _tip-5">
+								<img data-tippy-content="No peel under bath mat" src="img/svg/plus.svg" alt="+">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__works works">
+				<div class="works__container">
+					<h2 data-watch-threshold="0.04" data-watch class="works__title title">How it Works.</h2>
+					<div data-watch-threshold="0.04" data-watch class="works__text">It’s the better choice on all counts: you get a handsome looking bathroom for cheaper, in less time, and with much less hassle. The result is just as good as if you’d gone with new.</div>
+					<div class="works__content">
+						<div class="works__body">
+							<div data-watch-threshold="0.04" data-watch class="works__columns-works columns-works">
+								<div class="columns-works__column-works">
+									<div class="column-works__image">
+										<img src="img/svg/works/01.svg" alt="bath">
+									</div>
+									<div class="column-works__title">No Peeling Off</div>
+									<div class="column-works__text">No Peeling under bathmat with suction cups. No peeling if faucet leaking.</div>
+								</div>
+								<div class="columns-works__column-works">
+									<div class="column-works__image">
+										<img src="img/svg/works/02.svg" alt="svg-img">
+									</div>
+									<div class="column-works__title">Odor Free Process and Product</div>
+									<div class="column-works__text">No need for special ventilation. Eco-Friendly. Near Zero VOC.</div>
+								</div>
+								<div class="columns-works__column-works">
+									<div class="column-works__image">
+										<img src="img/svg/works/03.svg" alt="svg-img">
+									</div>
+									<div class="column-works__title">10x Times Thicker</div>
+									<div class="column-works__text">10x Times thicker than regular spray. Hardness Shore D 80.</div>
+								</div>
+								<div class="columns-works__column-works">
+									<div class="column-works__image">
+										<img src="img/svg/works/04.svg" alt="svg-img">
+									</div>
+									<div class="column-works__title">Pour-On Application
+									</div>
+									<div class="column-works__text">No Lines, No drips . No orange peel. Smooth , Mirror like Finish.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-watch-threshold="0.04" data-watch class="works__image">
+						<div class="works__buttons">
+							<a href="#" class="make__button-play works__image-button">
+								<img src="img/svg/play.svg" alt="play">
+								<span class="make__button-circle _circle-1"></span>
+								<span class="make__button-circle _circle-2"></span>
+								<span class="make__button-circle _circle-3"></span>
+							</a>
+						</div>
+						<picture><source srcset="img/works/bath.webp" type="image/webp"><img src="img/works/bath.png" alt="bath"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__bathroom bathroom">
+				<div class="bathroom__container">
+					<div class="bathroom__content">
+						<div class="bathroom__body">
+							<h3 data-watch data-watch-threshold="0.04" class="bathroom__title">Is your bathroom a mess?</h3>
+							<div data-watch data-watch-threshold="0.04" class="bathroom__text text">It’s the better choice on all counts: you get a handsome looking bathroom for cheaper, in less time, and with much less hassle. The result is just as good as if you’d gone with new.</div>
+							<a data-watch data-watch-threshold="0.04" href="./about.html" class="bathroom__button button">About us</a>
+						</div>
+						<div data-watch data-watch-threshold="0.04" data-da=".bathroom__body, 992, 2" class="bathroom__image">
+							<picture><source srcset="img/bathroom/bath.webp" type="image/webp"><img src="img/bathroom/bath.png" alt="bath"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__what what">
+				<div class="what__container">
+					<div class="what__content">
+						<div class="what__body">
+							<h3 data-watch data-watch-threshold="0.04" class="what__title">What about a reglazing job?</h3>
+							<div data-watch data-watch-threshold="0.04" class="what__text text">Most companies who say they ‘refinish’ bathtubs just cover the mess with a quick coat of toxic paint or lacquer. Your bathtub might look nice when it’s done, but that thin, toxic coating that will peel off in 2-3 years, uncovering
+								all the ugliness hidden beneath</div>
+							<a data-watch data-watch-threshold="0.04" href="./about.html" class="what__button button">About us</a>
+						</div>
+						<div data-watch data-watch-threshold="0.04" data-da=".what__body, 992, 2" class="what__image">
+							<picture><source srcset="img/what/01.webp" type="image/webp"><img src="img/what/01.png" alt="washbasin"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__company company">
+				<div class="company__container">
+					<div class="company__content">
+						<div class="company__body">
+							<h3 data-watch data-watch-threshold="0.04" class="company__title">Our company</h3>
+							<div data-watch data-watch-threshold="0.04" class="company__text text">As mentioned, Bathtub Refinishing in Chicago has been in business for a long period of time. With our experience we are proud to announce that we are one of the best companies in the Chicago area that work with bathtub refinishing,
+								shower resurfacing, sink resurfacing, and tile repair. Our company only employs trained specialists who are highly acquainted with this type of work and care about their job.</div>
+							<a data-watch data-watch-threshold="0.04" href="./about.html" class="company__button button">About us</a>
+						</div>
+						<div data-watch data-watch-threshold="0.04" data-da=".company__body, 992, 2" class="company__image">
+							<picture><source srcset="img/company/01.webp" type="image/webp"><img src="img/company/01.png" alt="bath"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__words words">
+				<div class="words__container">
+					<div class="words__content">
+						<h2 data-watch data-watch-threshold="0.04" class="words__title title">
+							Words by our customer
+						</h2>
+						<!-- Оболочка слайдера -->
+						<div data-watch class=" words__slider swiper ">
+							<!-- Двигающееся часть слайдера -->
+							<div class="words__wrapper swiper-wrapper ">
+								<!-- Слайд -->
+								<div class=" words__slide swiper-slide ">
+									<div class="words__body">
+										<div class="words__image">
+											<picture><source srcset="img/words/01.webp" type="image/webp"><img src="img/words/01.png" alt="words__image"></picture>
+										</div>
+										<div class="words__text-block">
+											<div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
+											</div>
+											<div class="words__name">DAVID BRAIN</div>
+										</div>
+									</div>
+								</div>
+								<div class=" words__slide swiper-slide ">
+									<div class="words__body">
+										<div class="words__image">
+											<picture><source srcset="img/words/02.webp" type="image/webp"><img src="img/words/02.png" alt="words__image"></picture>
+										</div>
+										<div class="words__text-block">
+											<div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
+											</div>
+											<div class="words__name">ALINA GROSS</div>
+										</div>
+									</div>
+								</div>
+								<div class=" words__slide swiper-slide ">
+									<div class="words__body">
+										<div class="words__image">
+											<picture><source srcset="img/words/01.webp" type="image/webp"><img src="img/words/01.png" alt="words__image"></picture>
+										</div>
+										<div class="words__text-block">
+											<div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
+											</div>
+											<div class="words__name">DAVID BRAIN</div>
+										</div>
+									</div>
+								</div>
+								<div class=" words__slide swiper-slide ">
+									<div class="words__body">
+										<div class="words__image">
+											<picture><source srcset="img/words/02.webp" type="image/webp"><img src="img/words/02.png" alt="words__image"></picture>
+										</div>
+										<div class="words__text-block">
+											<div class="words__text">The results are excellent. I've refinished 3 tubs with them and they all look like brand new tubs.
+											</div>
+											<div class="words__name">ALINA GROSS</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-watch class="words__buttons ">
+								<button type="button " class="swiper-button-prev ">
+									<img src="img/svg/arrow.svg " alt="arrow ">
+								</button>
+								<button type="button " class="swiper-button-next ">
+									<img src="img/svg/arrow.svg " alt="arrow ">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__costomers costomers ">
+				<div class="costomers__container ">
+					<div class="costomers__content ">
+						<h2 data-watch data-watch-threshold="0.04" class="costomers__title title ">Our customer</h2>
+						<div class="costomers__body ">
+							<div data-watch data-watch-threshold="0.04" class="costomers__image _big _1 ">
+								<img src="img/svg/customers/01.svg " alt="customers ">
+							</div>
+							<div data-watch data-watch-threshold="0.04" class="costomers__image _big _2">
+								<img src="img/svg/customers/02.svg " alt="customers ">
+							</div>
+							<div data-watch data-watch-threshold="0.04" class="costomers__image _3 ">
+								<img src="img/svg/customers/03.svg " alt="customers ">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__image">
+						<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt="footer__image"></picture>
+					</div>
+					<div class="footer__menu footer-menu">
+						<nav class="footer__body">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="./index.html" class="footer-menu__link">Home</a>
+								</li>
+								<li class="footer__item">
+									<a href="./what.html" class="footer-menu__link">What we use</a>
+								</li>
+								<li class="footer__item">
+									<a href="./about.html" class="footer-menu__link">About us</a>
+								</li>
+								<li class="footer__item">
+									<a href="./gallery.html" class="footer-menu__link">Gallery</a>
+								</li>
+								<li class="footer__item">
+									<a href="./blog.html" class="footer-menu__link">Blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="./reglazing.html" class="footer-menu__link">Why reglazing</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+					<div class="footer__contact contact-footer">
+						<h4 class="contact-footer__title">Contact info
+						</h4>
+						<div class="contact-footer__adress-block">
+							<a href="#" class="contact-footer__adress">
+								<p>Adress:</p>
+								<span>1160 Cresthaven Lane 207 IL, Naperville zip 60564</span>
+							</a>
+							<a href="#" class="contact-footer__adress-icon">
+								<img src="img/svg/footer/location.svg" alt="adress-icon">
+							</a>
+						</div>
+						<a href="#" class="contact-footer__phone-block">
+							<div class="contact-footer__phone">
+								<p>Phone:</p>
+								<span>+1 (312) 931-5885</span>
+
+							</div>
+							<div class="contact-footer__phone-icon">
+								<img src="img/svg/footer/phone.svg" alt="phone-icon">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__botom">
+					<div class="footer__social">
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/01.svg" alt="social">
+						</a>
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/02.svg" alt="social">
+						</a>
+					</div>
+					<div class="footer__copyright-block">
+						<div class="footer__copy">
+							<a href="#" class="footer__copy-link">privacy policy</a>
+						</div>
+						<div class="footer__develop">
+							Develop website <a target="_blank" href="https://bahtiiar.kg/">bahtiiar.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221006130623"></script>
 </body>
 
 </html>

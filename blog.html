@@ -1,73 +1,218 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"blog" })
+
+<head>
+	<title>blog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221006130623">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap&_v=20221006130623" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:500,700,900&display=swap&_v=20221006130623" rel="stylesheet" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
-    <div class="wrapper">
-        @@include('html/_header.htm',{})
-        <main class="page">
-            <section class="page__blog blog">
-                <div class="blog__container">
-                    <h1 class="blog__title title">
-                        Blog
-                    </h1>
-                    <div class="blog__text">Everything about bathtub refinishing</div>
-                    <article class="blog__cards-blog cards-blog">
-                        <div class="cards-blog__card-blog card-blog">
-                            <a href="#" class="card-blog__title title">How to Take Care of Your Refinished/Re-glazed Bathtub?</a>
-                            <div class="card-blog__images">
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/11.png" alt="image-blog">
-                                </a>
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/12.png" alt="image-blog">
-                                </a>
-                            </div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__menu-block">
+						<div class="header__info-block">
+							<a href="#" class="header__adress"> <img src="img/svg/header-adress.svg" alt="adress.svg"> <span>1160 Cresthaven Lane 207 IL, Naperville</span></a>
+							<a href="tel:13129315885" class="header__phone"> <img src="img/svg/header-phone.svg" alt="header-phone"> <span>+1 (312) 931-5885</span></a>
+						</div>
+						<div data-da=".header__content, 991.98" class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="./index.html" class="menu__link">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="./what.html" class="menu__link">What we use</a>
+									</li>
+									<li class="menu__item">
+										<a href="./about.html" class="menu__link">About us</a>
+									</li>
+									<li class="menu__item">
+										<a href="./gallery.html" class="menu__link">Gallery</a>
+									</li>
+									<li class="menu__item">
+										<a href="./blog.html" class="menu__link">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="./reglazing.html" class="menu__link">Why reglazing</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="./contact.html" class="header__button button">
+						contact us
+					</a>
+				</div>
+			</div>
+			<a href="#" class="test">
+				<div class="test__image">
+					<img src="img/svg/question/01.svg" alt="question">
+				</div>
+				<div class="test__text">Have a question? Write to us</div>
+			</a>
+		</header>
+		<main class="page">
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<h1 class="blog__title title">
+						Blog
+					</h1>
+					<div class="blog__text">Everything about bathtub refinishing</div>
+					<article class="blog__cards-blog cards-blog">
+						<div class="cards-blog__card-blog card-blog">
+							<a href="#" class="card-blog__title title">How to Take Care of Your Refinished/Re-glazed Bathtub?</a>
+							<div class="card-blog__images">
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/11.webp" type="image/webp"><img src="img/blog/11.png" alt="image-blog"></picture>
+								</a>
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/12.webp" type="image/webp"><img src="img/blog/12.png" alt="image-blog"></picture>
+								</a>
+							</div>
 
-                            <a href="#" class="card-blog__text">I've noticed that many people who refinished their bathtubs have no idea how to take care of their refinished bathtub. And this article will help those who have already refinished their bathtubs and those…</a>
-                            <a href="#" class="card-blog__button button">
-                                Read more
-                            </a>
-                        </div>
-                        <div class="cards-blog__card-blog card-blog">
-                            <a href="#" class="card-blog__title title">Why Do You Have To Refinish Your Tub?</a>
-                            <div class="card-blog__images">
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/21.png" alt="image-blog">
-                                </a>
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/22.png" alt="image-blog">
-                                </a>
-                            </div>
+							<a href="#" class="card-blog__text">I've noticed that many people who refinished their bathtubs have no idea how to take care of their refinished bathtub. And this article will help those who have already refinished their bathtubs and those…</a>
+							<a href="#" class="card-blog__button button">
+								Read more
+							</a>
+						</div>
+						<div class="cards-blog__card-blog card-blog">
+							<a href="#" class="card-blog__title title">Why Do You Have To Refinish Your Tub?</a>
+							<div class="card-blog__images">
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/21.webp" type="image/webp"><img src="img/blog/21.png" alt="image-blog"></picture>
+								</a>
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/22.webp" type="image/webp"><img src="img/blog/22.png" alt="image-blog"></picture>
+								</a>
+							</div>
 
-                            <a href="#" class="card-blog__text">There are a number of reasons why people opt for refinishing their tubs instead of removing them, such as cost-effectiveness, as well as saving time and effort spent. Additionally, refinishing allows you…</a>
-                            <a href="#" class="card-blog__button button">
-                                Read more
-                            </a>
-                        </div>
-                        <div class="cards-blog__card-blog card-blog">
-                            <a href="#" class="card-blog__title title">Why Bathtub Refinishing Is The Best Choice For Hotels And Apartment Buildings</a>
-                            <div class="card-blog__images">
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/31.png" alt="image-blog">
-                                </a>
-                                <a href="#" class="card-blog__image">
-                                    <img src="@img/blog/32.png" alt="image-blog">
-                                </a>
-                            </div>
+							<a href="#" class="card-blog__text">There are a number of reasons why people opt for refinishing their tubs instead of removing them, such as cost-effectiveness, as well as saving time and effort spent. Additionally, refinishing allows you…</a>
+							<a href="#" class="card-blog__button button">
+								Read more
+							</a>
+						</div>
+						<div class="cards-blog__card-blog card-blog">
+							<a href="#" class="card-blog__title title">Why Bathtub Refinishing Is The Best Choice For Hotels And Apartment Buildings</a>
+							<div class="card-blog__images">
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/31.webp" type="image/webp"><img src="img/blog/31.png" alt="image-blog"></picture>
+								</a>
+								<a href="#" class="card-blog__image">
+									<picture><source srcset="img/blog/32.webp" type="image/webp"><img src="img/blog/32.png" alt="image-blog"></picture>
+								</a>
+							</div>
 
-                            <a href="#" class="card-blog__text">The biggest reason why bathtub refinishing is the best choice for hotels and apartment buildings is that comparatively, it is more economical. Moreover, if you hire a professional for the job, you will…</a>
-                            <a href="#" class="card-blog__button button ">
-                                Read more
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-        @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+							<a href="#" class="card-blog__text">The biggest reason why bathtub refinishing is the best choice for hotels and apartment buildings is that comparatively, it is more economical. Moreover, if you hire a professional for the job, you will…</a>
+							<a href="#" class="card-blog__button button ">
+								Read more
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__image">
+						<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt="footer__image"></picture>
+					</div>
+					<div class="footer__menu footer-menu">
+						<nav class="footer__body">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="./index.html" class="footer-menu__link">Home</a>
+								</li>
+								<li class="footer__item">
+									<a href="./what.html" class="footer-menu__link">What we use</a>
+								</li>
+								<li class="footer__item">
+									<a href="./about.html" class="footer-menu__link">About us</a>
+								</li>
+								<li class="footer__item">
+									<a href="./gallery.html" class="footer-menu__link">Gallery</a>
+								</li>
+								<li class="footer__item">
+									<a href="./blog.html" class="footer-menu__link">Blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="./reglazing.html" class="footer-menu__link">Why reglazing</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+					<div class="footer__contact contact-footer">
+						<h4 class="contact-footer__title">Contact info
+						</h4>
+						<div class="contact-footer__adress-block">
+							<a href="#" class="contact-footer__adress">
+								<p>Adress:</p>
+								<span>1160 Cresthaven Lane 207 IL, Naperville zip 60564</span>
+							</a>
+							<a href="#" class="contact-footer__adress-icon">
+								<img src="img/svg/footer/location.svg" alt="adress-icon">
+							</a>
+						</div>
+						<a href="#" class="contact-footer__phone-block">
+							<div class="contact-footer__phone">
+								<p>Phone:</p>
+								<span>+1 (312) 931-5885</span>
+
+							</div>
+							<div class="contact-footer__phone-icon">
+								<img src="img/svg/footer/phone.svg" alt="phone-icon">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__botom">
+					<div class="footer__social">
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/01.svg" alt="social">
+						</a>
+						<a href="#" class="footer__social">
+							<img src="img/svg/footer/02.svg" alt="social">
+						</a>
+					</div>
+					<div class="footer__copyright-block">
+						<div class="footer__copy">
+							<a href="#" class="footer__copy-link">privacy policy</a>
+						</div>
+						<div class="footer__develop">
+							Develop website <a target="_blank" href="https://bahtiiar.kg/">bahtiiar.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221006130623"></script>
 </body>
 
 </html>
