@@ -1,0 +1,363 @@
+//====================================================================================================
+//========================================================================================================================================================
+.page {
+    &__choose {}
+    &__rows {}
+    &__benefits {}
+    &__refinishing {}
+    &__text-bathroom {}
+    &__thing {}
+}
+
+//===choose=====================================================================================================================================================
+.choose {
+    &__container {
+        text-align: center;
+        @include adaptiveValue("padding-top", 227, 150);
+        @include adaptiveValue("padding-bottom", 50, 20);
+    }
+    &__title {
+        @include adaptiveValue("font-size", 64, 32);
+        @include adaptiveValue("padding-bottom", 50, 20);
+    }
+    &__content {
+        text-align: left;
+        @media (min-width: em(1380)) {
+            margin: 0 50px;
+        }
+        @media (min-width: $tablet) {
+            display: flex;
+        }
+        @include adaptiveValue("gap", 60, 30);
+    }
+    &__image {
+        @include adaptiveValue("margin-left", -430, -15, 1780, 992, 1);
+        position: relative;
+        padding: 0 63% 50.2% 0;
+        max-height: 730px;
+        @media (max-width: em(1260)) {
+            padding: 0 50% 50.2% 0;
+        }
+        @media (max-width: em(992)) {
+            margin: 0 -15px;
+        }
+        @media (max-width: em(600)) {
+            padding: 0 63% 80.2% 0;
+        }
+    }
+    &__image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: em(1260)) {
+            width: 100%;
+            height: 90%;
+        }
+        top: 0;
+        left: 0;
+        object-fit: cover
+    }
+    &__body {}
+    &__sub-title {
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+        @include adaptiveValue("padding-bottom", 20, 10);
+    }
+    &__tags {
+        @include adaptiveValue("padding-bottom", 30, 20);
+        letter-spacing: 0.075em;
+        font-weight: 400;
+        @include adaptiveValue("font-size", 25, 18);
+        line-height: math.div(30, 25);
+        /* blue */
+        color: #0083C8;
+    }
+    &__text {
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+        @include adaptiveValue("padding-bottom", 30, 20);
+    }
+    &__punkts {
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+        li {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #000;
+            }
+        }
+    }
+    &__punkt {
+        padding: 0 0 0 20px;
+    }
+}
+
+//=======rows=================================================================================================================================================
+.rows {
+    &__container {
+        @include adaptiveValue("padding-bottom", 65, 30);
+    }
+    &__row {
+        @media (min-width: em(1380)) {
+            margin: 0 50px;
+        }
+    }
+}
+
+.row {
+    &__title {
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+        letter-spacing: 0.075em;
+        @include adaptiveValue("padding-bottom", 40, 20);
+    }
+    &__text {
+        @include adaptiveValue("font-size", 24, 20);
+        @include adaptiveValue("padding-bottom", 50, 25);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+    }
+}
+
+//=======benefits=================================================================================================================================================
+.benefits {
+    &__content {
+        max-width: rem(1625);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("margin-bottom", 50, 25);
+    }
+    &__title {
+        @media (min-width: em(1380)) {
+            padding: 0 50px;
+        }
+        padding: 0 15px;
+        text-align: center;
+        align-self: center;
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+        max-width: rem(1120);
+        @include adaptiveValue("margin-bottom", 50, 25);
+    }
+    &__cards-benefits {
+        display: flex;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+        row-gap: 30px;
+        @include adaptiveValue("column-gap", 30, 10, );
+        @include adaptiveValue("margin-bottom", 50, 25);
+    }
+    &__text-block {
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+        span {
+            font-weight: 700;
+        }
+        p {
+            @include adaptiveValue("margin-bottom", 30, 20);
+        }
+    }
+}
+
+.cards-benefits {
+    &__card {
+        transition: all 0.5s ease 0s;
+        cursor: pointer;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+                z-index: 2;
+            }
+        }
+        position: relative;
+        padding: 0 31.7% 25.355% 0;
+        @media (max-width:$mobile) {
+            @include adaptiveValue("margin-left", 120, 0, 768, 480, 1);
+            @include adaptiveValue("margin-right", 120, 0, 768, 480, 1);
+            padding: 0 31.7% 55.355% 0;
+        }
+    }
+    &__card img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+//==========refinishing==============================================================================================================================================
+.refinishing {
+    &__container {
+        position: relative;
+    }
+    &__title {
+        text-align: center;
+        @include adaptiveValue("margin-top", 38, 20);
+        @include adaptiveValue("margin-bottom", 50, 35);
+        @media (min-width: em(1380)) {
+            margin-right: rem(50);
+            margin-left: rem(50);
+        }
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+    }
+    &__content {
+        @media (min-width: em(1380)) {
+            margin: 0 50px;
+        }
+        @media (min-width: em(1640.1)) {
+            display: flex;
+        }
+        @include adaptiveValue("margin-bottom", 50, 25);
+    }
+    &__text {
+        flex: 0 0 730px;
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+        p {
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 45, 25);
+            }
+        }
+    }
+    @media (min-width:em(1640.1)) {
+        &__image {
+            position: absolute;
+            max-height: 462px;
+            @include adaptiveValue("width", 993, 950, 1920, 1440, 1);
+            @include adaptiveValue("right", -494, -490, 1920, 1640, 1);
+            top: 250px;
+        }
+        &__image img {
+            width: 110%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width: em(1640)) {
+        &__image {
+            position: relative;
+            padding: 0 0 50% 0;
+        }
+        &__image img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media (max-width: $mobileSmall) {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+//========text-bathroom================================================================================================================================================
+.text-bathroom {
+    &__container {
+        @include adaptiveValue("padding-top", 50, 25);
+        @include adaptiveValue("padding-bottom", 50, 25);
+    }
+    &__text {
+        @media (min-width: $mobile) {
+            padding: 0 50px;
+        }
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+        text-align: center;
+        letter-spacing: 0.075em;
+    }
+}
+
+//======thing==================================================================================================================================================
+.thing {
+    &__container {
+        @include adaptiveValue("padding-top", 50, 25);
+        @include adaptiveValue("padding-bottom", 50, 25);
+    }
+    &__content {
+        display: flex;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin: 0 -15px;
+        }
+        @include adaptiveValue("gap", 85, 40);
+    }
+    &__body {
+        margin: 0 15px;
+        @media (min-width: $tablet) {
+            flex: 1 1 736px;
+            min-width: 500px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #0083C8;
+        @include adaptiveValue("margin-bottom", 50, 25);
+    }
+    &__text {
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+    }
+    &__image {
+        @include adaptiveValue("margin-right", -379, -15, 1780, 992, 1);
+        position: relative;
+        padding: 0 63% 50.175% 0;
+        max-height: 582px;
+        @media (max-width: em(1280)) {
+            padding: 0 43% 50.175% 0;
+        }
+        @media (max-width: em(991.8)) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: em(1280)) {
+            width: 90%;
+            height: 80%;
+        }
+        @media (max-width: em(991.8)) {
+            width: 100%;
+            height: 100%;
+        }
+        top: 0;
+        right: 0;
+        object-fit: cover;
+    }
+}
+
+//========================================================================================================================================================
+//====================================================================================================

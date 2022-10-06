@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"What we us" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="page__contact contact">
+                <div class="contact__content">
+                    <div class="contact__container">
+                        <h1 class="contact__title title">
+                            Contact us
+                        </h1>
+                        <div class="contact__head-contact head-contact">
+                            <div class="head-contact__columns-contact">
+                                <div class="columns-contact__column-contact">
+                                    <h3 class="column-contact__title">
+                                        Our location
+                                    </h3>
+                                    <div class="column-contact__location">
+                                        <img src="@img/svg/contact/location.svg" alt="location-svg">
+                                        <div class="column-contact__adress">
+                                            1160 Cresthaven Lane 207 IL, Naperville zip 60564
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns-contact__column-contact">
+                                    <h3 class="column-contact__title">
+                                        Contact us
+                                    </h3>
+                                    <ul class="column-contact__links">
+                                        <a href="tel:13129315885" class="column-contact__link">
+                                            <img src="@img/svg/contact/phone.svg" alt="phone-svg">
+                                            <div class="column-contact__phone">
+                                                <span>Phone:</span>
+                                                <div>+1 (847) 243-3840</div>
+                                            </div>
+                                        </a>
+                                        <a href="mailto:example@gmail.com" class="column-contact__link">
+                                            <img src="@img/svg/contact/mail.svg" alt="mail-svg">
+                                            <div class="column-contact__phone">
+                                                <span>E-Mail:</span>
+                                                <div>example@gmail.com</div>
+                                            </div>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__map" id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.298369620716!2d-88.17159808456472!3d41.692494179237386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef6273f8edff7%3A0xc14c9feda7c2bea5!2zMTE2MCBDcmVzdGhhdmVuIExuICMyMDcsIE5hcGVydmlsbGUsIElMIDYwNTY0LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1665044252929!5m2!1sru!2sua"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact__form-block">
+                        <div class="form-block__image">
+                            <img src="@img/form/01.png" alt="form-image">
+                        </div>
+                        <form action="#" class="form-block__form">
+                            <h2 class="form__title title">Leave a request</h2>
+                            <div class="form__text">Leave a request and we will call you back within 15 minutes</div>
+                            <div class="form__inputs">
+                                <input autocomplete="off" required type="text" name="form-name" data-error="Ошибка" placeholder="Name" class="form__input">
+                                <input autocomplete="off" required type="number" name="form-phone" data-error="Ошибка" placeholder="Phone" class="form__input">
+                                <input autocomplete="off" required type="email" name="form-E-mail" data-error="Ошибка" placeholder="E-mail" class="form__input">
+                            </div>
+                            <button class="form__button button">Send a request</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+
+</html>

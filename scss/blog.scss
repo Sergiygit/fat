@@ -1,0 +1,110 @@
+//====================================================================================================
+//========================================================================================================================================================
+.page {
+    &__blog {
+        margin: 0 auto;
+        max-width: rem(993);
+    }
+}
+
+//===blog=====================================================================================================================================================
+.blog {
+    &__container {
+        text-align: center;
+        @include adaptiveValue("padding-top", 227, 150);
+    }
+    &__title {
+        @include adaptiveValue("font-size", 64, 36);
+        @include adaptiveValue("margin-bottom", 20, 15);
+    }
+    &__text {
+        font-weight: 600;
+        @include adaptiveValue("font-size", 35, 28);
+        line-height: math.div(43, 35);
+        color: #606060;
+        letter-spacing: 0.075em;
+        @include adaptiveValue("margin-bottom", 30, 20);
+    }
+    &__cards-blog {
+        text-align: left;
+        @include adaptiveValue("padding-bottom", 100, 40);
+    }
+}
+
+.cards-blog {
+    &__card-blog {
+        max-width: rem(993);
+        &:not(:last-child) {
+            @include adaptiveValue("padding-bottom", 75, 45);
+        }
+    }
+}
+
+.card-blog {
+    &__images {
+        display: flex;
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+        }
+        @include adaptiveValue("gap", 17, 12);
+        @include adaptiveValue("margin-bottom", 34, 22);
+    }
+    &__image {
+        transition: all 0.5s ease 0s;
+        cursor: pointer;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.03);
+                z-index: 2;
+            }
+        }
+        position: relative;
+        padding: 0 49.15% 31.9% 0;
+        @media (max-width:$mobileSmall) {
+            padding: 0 49.15% 61.9% 0;
+            margin: 0 -15px;
+        }
+    }
+    &__image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        display: block;
+        @include adaptiveValue("font-size", 36, 20);
+        @include adaptiveValue("margin-bottom", 20, 15);
+    }
+    &__text {
+        display: block;
+        @include adaptiveValue("font-size", 24, 18);
+        line-height: 138%;
+        letter-spacing: 0.075em;
+        @include adaptiveValue("margin-bottom", 34, 22);
+    }
+    &__button {
+        border: 2px solid #0083C8;
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        @media (max-width: $tablet) {
+            margin: 0 auto;
+        }
+        border: 2px solid #0083C8;
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                background: #0083C8;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//====================================================================================================
